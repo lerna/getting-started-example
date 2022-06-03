@@ -1,0 +1,9 @@
+node_modules
+dist
+.idea
+
+.cache
+packages/remixapp/build
+packages/remixapp/public/build
+.env
+
