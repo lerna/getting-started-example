@@ -2,7 +2,5 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "999.9.17",
-    "nx": "14.2.0-rc.0"
   }
 }
