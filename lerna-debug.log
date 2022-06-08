@@ -1,0 +1,6 @@
+37 error Error: Command failed with exit code 128: git tag v1.0.0 -m v1.0.0
+37 error fatal: tag 'v1.0.0' already exists
+37 error     at makeError (/Users/vsavkin/projects/demos/newlerna/node_modules/execa/lib/error.js:60:11)
+37 error     at handlePromise (/Users/vsavkin/projects/demos/newlerna/node_modules/execa/index.js:118:26)
+37 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+37 error     at async Promise.all (index 0)
