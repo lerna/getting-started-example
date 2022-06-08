@@ -27,5 +27,15 @@
   },
   "engines": {
     "node": ">=14"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "outputs": [
+          "./build",
+          "./public/build"
+        ]
+      }
+    }
   }
 }
