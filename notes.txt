@@ -1,0 +1,2 @@
+npx lerna run build --scope=remixapp
+npx lerna run dev --scope=remixapp
