@@ -12,18 +12,28 @@
     }
   },
   "namedInputs": {
-    "default": ["{projectRoot}/**/*"],
-    "prod": ["!{projectRoot}/**/*.spec.tsx"]
+    "default": [
+      "{projectRoot}/**/*"
+    ],
+    "prod": [
+      "!{projectRoot}/**/*.spec.tsx"
+    ]
   },
   "targetDefaults": {
     "build": {
-      "inputs": ["prod", "^prod"],
+      "inputs": [
+        "prod",
+        "^prod"
+      ],
       "dependsOn": [
         "^build"
       ]
     },
     "test": {
-      "inputs": ["default", "^prod"]
+      "inputs": [
+        "default",
+        "^prod"
+      ]
     },
     "dev": {
       "dependsOn": [
