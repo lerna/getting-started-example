@@ -16,14 +16,14 @@ packages/
         src/
             ...
         package.json
-        rollup.config.json
+        rollup.config.js
         jest.config.js
 
     footer/
         src/
             ...
         package.json
-        rollup.config.json
+        rollup.config.js
         jest.config.js
 
     remixapp/
