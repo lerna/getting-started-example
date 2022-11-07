@@ -1,12 +1,19 @@
 version: '2.1'
 orbs:
   path-filtering: circleci/path-filtering@0.0.1
+  continuation: circleci/continuation@0.1.2
+
 workflows:
-  generate-config:
+  always-run:
     jobs:
       - path-filtering/filter:
-          base-revision: main
-          config-path: .circleci/continue-config.yml
+          name: check-updated-files
           mapping: |
-            packages/footer/.* build true
-            packages/header.* build true
+            packages/footer/.* run-footer-pipeline true
+            packages/header/.* run-header-pipeline true
+          base-revision: main
+          # this is the path of the configuration we should trigger once
+          # path filtering and pipeline parameter value updates are
+          # complete. In this case, we are using the parent dynamic
+          # configuration itself.
+          config-path: .circleci/continue_config.yml

@@ -1,0 +1,26 @@
+version: '2.1'
+orbs:
+  path-filtering: circleci/path-filtering@0.0.1
+
+parameters:
+  run-footer-pipeline:
+    type: boolean
+    default: false
+  run-header-pipeline:
+    type: boolean
+    default: false
+
+workflows:
+  service-1:
+    when: << pipeline.parameters.run-footer-pipeline >>
+    jobs:
+      - run:
+          name: footer-pipeline
+          command: echo 'running footer pipeline'
+
+  service-2:
+    when: << pipeline.parameters.run-footer-pipeline >>
+    jobs:
+      - run:
+          name: build-service-2
+          command: echo 'running header pipeline'
