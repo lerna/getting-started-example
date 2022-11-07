@@ -1,6 +1,11 @@
-version: '2.1'
-orbs:
-  path-filtering: circleci/path-filtering@0.0.1
+version: 2.1
+# the default pipeline parameters, which will be updated according to
+# the results of the path-filtering orb
+
+executors:
+  node_browsers:
+    docker:
+      - image: cimg/node:14.17.0-browsers
 
 parameters:
   run-footer-pipeline:
@@ -10,17 +15,34 @@ parameters:
     type: boolean
     default: false
 
+jobs:
+  footer:
+    executor: node_browsers
+    steps:
+      - run:
+          name: Run footer
+          command: echo 'footer'
+  header:
+    executor: node_browsers
+    steps:
+      - run:
+          name: Run header
+          command: echo 'header'
 workflows:
+  # when pipeline parameter, run-build-service-1-job is true, the
+  # build-service-1 job is triggered.
   service-1:
     when: << pipeline.parameters.run-footer-pipeline >>
     jobs:
-      - run:
-          name: footer-pipeline
-          command: echo 'running footer pipeline'
-
+      - footer
+  # when pipeline parameter, run-build-service-2-job is true, the
+  # build-service-2 job is triggered.
   service-2:
-    when: << pipeline.parameters.run-footer-pipeline >>
+    when: << pipeline.parameters.run-header-pipeline >>
     jobs:
-      - run:
-          name: build-service-2
-          command: echo 'running header pipeline'
+      - header
+  # when pipeline parameter, run-build-service-1-job OR
+  # run-build-service-2-job is true, run-integration-tests job is
+  # triggered. see:
+  # https://circleci.com/docs/configuration-reference/#logic-statements
+  # for more information.
