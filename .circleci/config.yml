@@ -8,5 +8,5 @@ workflows:
           base-revision: main
           config-path: .circleci/continue-config.yml
           mapping: |
-            packages/footer/.*
-            packages/header.*
+            packages/footer/.* build
+            packages/header.* build
