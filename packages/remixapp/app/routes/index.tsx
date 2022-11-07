@@ -6,7 +6,7 @@ export default function Index() {
         <>
             <Header/>
             <div>
-                Content!
+                Content! test
             </div>
             <Footer/>
         </>
