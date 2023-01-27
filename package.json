@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "verify": "node scripts/verify-version.js",
+    "publish": "lerna publish --no-private --registry http://localhost:4873/"
+  },
   "devDependencies": {
     "lerna": "^6.4.1"
   },

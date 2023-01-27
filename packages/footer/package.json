@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup --config",
-    "test": "jest"
+    "test": "jest",
+    "verify": "node ../../scripts/verify-version.js typescript"
   },
   "dependencies": {
     "@testing-library/react": "13.3.0",
