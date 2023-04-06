@@ -1,0 +1,34 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   private: false,
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/rama/Desktop/proj/Rama/getting-started-example
+3 info current version independant
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch testlerna
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream testlerna is behind origin/testlerna by 0 commit(s) and ahead by 0
+11 silly hasTags
+12 verbose hasTags false
+13 info Assuming all packages changed
+14 verbose updated footer
+15 verbose updated header
+16 verbose updated remixapp
+17 verbose git-describe undefined => "aa7b7ba"
+18 silly git-describe parsed => {"refCount":"9","sha":"aa7b7ba","isDirty":false}
+19 error TypeError: Invalid Version: null
+19 error     at new SemVer (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/semver/classes/semver.js:19:13)
+19 error     at compare (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/semver/functions/compare.js:3:32)
+19 error     at eq (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/semver/functions/eq.js:2:29)
+19 error     at Object.diff (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/semver/functions/diff.js:5:7)
+19 error     at isBreakingChange (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/@lerna/version/lib/is-breaking-change.js:12:30)
+19 error     at VersionCommand.setUpdatesForVersions (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/@lerna/version/index.js:446:50)
+19 error     at /Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/@lerna/version/index.js:246:26
+19 error     at /Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/p-waterfall/index.js:5:43
+19 error     at next (/Users/rama/Desktop/proj/Rama/getting-started-example/node_modules/p-reduce/index.js:17:9)
