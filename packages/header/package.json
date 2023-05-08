@@ -1,6 +1,6 @@
 {
   "name": "@rodrigolungui/header",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "UNLICENSED",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
