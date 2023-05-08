@@ -1,8 +1,11 @@
 {
-  "name": "footer",
+  "name": "@rodrigolungui/footer",
   "version": "0.0.3",
   "main": "dist/index.js",
   "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "rimraf dist && rollup --config",
     "test": "jest"

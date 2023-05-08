@@ -1,7 +1,10 @@
 {
-  "name": "header",
+  "name": "@rodrigolungui/header",
   "version": "0.0.3",
   "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup --config",
