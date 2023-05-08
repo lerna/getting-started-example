@@ -1,6 +1,6 @@
 {
   "name": "remixapp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "sideEffects": false,
   "scripts": {
@@ -13,21 +13,21 @@
     "@remix-run/node": "^1.5.1",
     "@remix-run/react": "^1.5.1",
     "@remix-run/serve": "^1.5.1",
+    "footer": "^0.0.1",
+    "header": "^0.0.1",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "header": "*",
-    "footer": "*"
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.5.1",
     "@remix-run/eslint-config": "^1.5.1",
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
     "eslint": "^8.15.0",
-    "typescript": "^4.6.4",
-    "@types/jest": "^27.0.3",
     "jest": "^27.4.3",
-    "ts-jest": "^27.1.1"
+    "ts-jest": "^27.1.1",
+    "typescript": "^4.6.4"
   },
   "engines": {
     "node": ">=14"
