@@ -7,5 +7,12 @@
   "devDependencies": {
     "auto": "^10.46.0",
     "lerna": "^6.6.2"
+  },
+  "repository": "rodrigolungui/getting-started-example",
+  "author": "Rodrigo Lungui <lungui.rodrigo@gmail.com>",
+  "auto": {
+    "plugins": [
+      "npm"
+    ]
   }
 }
