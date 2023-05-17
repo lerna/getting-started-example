@@ -1,6 +1,6 @@
 {
   "name": "@cityblock/test-npm-footer",
-  "version": "0.0.0",
+  "version": "0.0.2-alpha.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup --config",
