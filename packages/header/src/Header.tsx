@@ -3,7 +3,7 @@ import React from 'react';
 export function Header() {
     return (
         <header>
-            Lerna is the original monorepo tool!
+            Lerna is the original monorepo tool! Nice!
         </header>
     );
 }
