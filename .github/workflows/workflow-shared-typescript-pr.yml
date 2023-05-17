@@ -1,0 +1,36 @@
+name: Typescript Mixer PR workflow
+run-name: Typescript Monorepo PR workflow (${{ github.ref }})
+on:
+  pull_request:
+    branches:
+      - main
+# Cancel outdated jobs when an open PR is updated
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+        # commons: cache_check
+        - name: Check out repo code
+          uses: actions/checkout@v3
+        # Only install dependencies if cache does not exist
+        - name: Install dependencies
+          # if: steps.cache.outputs.cache-hit != 'true'
+          run: npm i
+        - name: Check for dirty git (may indicate dev did not run npm install)
+          # if: steps.cache.outputs.cache-hit != 'true'
+          run: git diff --exit-code
+        # commons: build
+        - name: Build libs and run tests
+          run: npx lerna run test
+        # commons: typecheck needs build
+        - name: Typecheck
+          run: npx lerna run build
+        - name: Release CI Stuff
+          run: echo ${{ github.ref }} && echo ${{ github.event.pull_request.merged == true }}
+
