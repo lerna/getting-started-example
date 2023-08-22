@@ -17,6 +17,9 @@
     ],
     "prod": [
       "!{projectRoot}/**/*.spec.tsx"
+    ],
+    "production": [
+      "default"
     ]
   },
   "targetDefaults": {
