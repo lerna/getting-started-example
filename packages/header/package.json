@@ -1,9 +1,8 @@
 {
   "name": "header",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-
   "scripts": {
     "build": "rimraf dist && rollup --config",
     "test": "jest"
