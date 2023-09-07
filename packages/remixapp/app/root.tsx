@@ -22,6 +22,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+      <div className="flex flex-col min-h-screen">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
