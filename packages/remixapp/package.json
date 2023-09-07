@@ -1,6 +1,6 @@
 {
   "name": "remixapp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "sideEffects": false,
   "scripts": {
@@ -19,13 +19,13 @@
   "devDependencies": {
     "@remix-run/dev": "^1.5.1",
     "@remix-run/eslint-config": "^1.5.1",
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
     "eslint": "^8.15.0",
-    "typescript": "^4.6.4",
-    "@types/jest": "^27.0.3",
     "jest": "^27.4.3",
-    "ts-jest": "^27.1.1"
+    "ts-jest": "^27.1.1",
+    "typescript": "^4.6.4"
   },
   "engines": {
     "node": ">=14"
