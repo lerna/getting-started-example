@@ -1,7 +1,7 @@
 {
   "name": "remixapp",
   "version": "0.0.2",
-  "private": true,
+
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
