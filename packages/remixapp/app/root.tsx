@@ -15,6 +15,8 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  console.log("TEST");
+
   return (
     <html lang="en">
       <head>
