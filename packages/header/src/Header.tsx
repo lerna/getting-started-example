@@ -1,9 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export function Header() {
-    return (
-        <header>
-            Lerna is the original monorepo tool!
-        </header>
-    );
+  return <header>Lerna is the original monorepo tool! HEHE</header>;
 }
