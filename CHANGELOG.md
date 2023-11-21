@@ -1,0 +1,11 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [1.2.0](https://github.com/tpimpinela/getting-started-example/compare/v0.0.1...v1.2.0) (2023-11-21)
+
+
+### Features
+
+* **footer:** add new text ([50aca98](https://github.com/tpimpinela/getting-started-example/commit/50aca9888c8a3042a76a3cb862995e332df28551))
